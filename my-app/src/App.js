@@ -9,7 +9,7 @@ import TodoForm from "./Components/TodoForm";
 const App=()=>{
   const[todos, dispatch]=useReducer(todoReducer,[])
   return(
-    <TodoContext.Provider vlaue={{todos,dispatch}}>
+    <TodoContext.Provider value={{todos,dispatch}}>
       <Container fluid>
         <h1>Todo App</h1>
         <TodoForm/>
